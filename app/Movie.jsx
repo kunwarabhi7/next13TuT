@@ -11,7 +11,7 @@ const Movie = ({title, poster_path , release_date , id }) => {
     <div className="flex flex-wrap -m-4">
       <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
         <Link href={`${id}`} className="block relative h-48 rounded overflow-hidden">
-          <Image alt="movie" width={800} height={800} className="object-cover object-center w-full h-full block" src={imagePath + poster_path} />
+          <Image alt="movie" width={600} height={600} className="object-cover object-center w-full h-full block" src={imagePath + poster_path} />
         </Link>
         <div className="mt-4">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">{title}</h3>
