@@ -6,7 +6,7 @@ const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${p
   const res = await data.json()
 
   return (
-    <div className="text-4xl ">
+    <div className="grid md:grid-cols-3  md:gap-8 ">
       {res.results.map((movie)=>(
         <Movie key={movie.id} id={movie.id} title={movie.title} poster_path={movie.poster_path} release_date={movie.release_date} />
       ))}
